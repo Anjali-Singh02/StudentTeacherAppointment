@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Student-Teacher Booking</title>
+		<link rel="stylesheet" href="../src/css/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>📚 Student-Teacher Booking</h1>
+			</header>
+
+			<section id="auth-section" class="card">
+				<h2>Login</h2>
+				<input type="email" id="email" placeholder="Email" />
+				<input type="password" id="password" placeholder="Password" />
+				<select id="role">
+					<option value="">Select Role</option>
+					<option value="student">Student</option>
+					<option value="teacher">Teacher</option>
+					<option value="admin">Admin</option>
+				</select>
+
+				<div class="button-group">
+					<button id="login">Login</button>
+					<button id="register">Register</button>
+				</div>
+				<p class="hint">
+					Try: student@demo.com, teacher@demo.com, admin@demo.com
+				</p>
+			</section>
+
+			<div id="dashboard" class="hidden">
+				<h2>Welcome, <span id="userName">User</span>!</h2>
+				<div class="dashboard-navigation">
+					<button class="nav-btn" id="student-panel">
+						Student Panel
+					</button>
+					<button class="nav-btn" id="teacher-panel">
+						Teacher Panel
+					</button>
+					<button class="nav-btn" id="admin-panel">
+						Admin Panel
+					</button>
+				</div>
+				<div id="panel-content"></div>
+				<button id="logout" class="logout-btn">Logout</button>
+			</div>
+		</div>
+
+		<script type="module" src="../src/js/main.js"></script>
+		<script type="module" src="../src/js/firebase-config.js"></script>
+		<script type="module" src="../src/js/login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,215 @@
+/* General Layout */
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: url('https://img.freepik.com/premium-photo/rewrite-this-title-vector-school-classroom-interior-university-generative-ai_1017677-1051.jpg')
+		no-repeat center center fixed;
+	background-size: cover;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	min-height: 100vh;
+	height: 100%;
+}
+
+/* Main Container */
+.container {
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 12px;
+	padding: 30px;
+	max-width: 600px;
+	width: 100%;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+}
+
+/* Titles */
+h1,
+h2,
+h3,
+h4 {
+	text-align: center;
+	color: #2b2b6c;
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+/* Inputs & Buttons */
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 12px;
+	margin-top: 12px;
+	margin-bottom: 18px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	box-sizing: border-box; /* Ensures proper padding inside inputs */
+}
+
+textarea {
+	resize: vertical;
+	min-height: 80px;
+}
+
+button {
+	padding: 12px 20px;
+	background-color: #2b2b6c;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 10px;
+	transition: background-color 0.3s ease;
+	width: 100%; /* Ensures buttons are 100% width on mobile */
+	box-sizing: border-box; /* Proper box sizing for buttons */
+	outline: none;
+}
+
+button:hover {
+	background-color: #4444aa;
+}
+
+.logout-btn {
+	background: red;
+}
+/* Panel Sections */
+.appointment-section,
+.message-section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.appointment-card {
+	background: #ffffff;
+	border-left: 5px solid #2b2b6c;
+	padding: 15px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Hidden Utility */
+.hidden {
+	display: none;
+}
+.logout-btn {
+	background: red;
+}
+
+/* Role Panel Buttons */
+#role-selection button {
+	width: 100%;
+	margin: 10px 0;
+	padding: 12px;
+	font-size: 1rem;
+}
+.logout-btn {
+	background: red;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+	.container {
+		max-width: 80%;
+		padding: 30px 20px;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	button {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 90%;
+		padding: 20px 15px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	input,
+	textarea,
+	button {
+		font-size: 0.9rem;
+	}
+
+	#role-selection button {
+		width: 100%;
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		max-width: 95%;
+		padding: 15px;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	input,
+	textarea,
+	button {
+		font-size: 0.85rem;
+	}
+
+	.appointment-card {
+		padding: 12px;
+	}
+
+	#role-selection button {
+		font-size: 0.85rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		max-width: 100%;
+		padding: 10px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.3rem;
+	}
+
+	input,
+	textarea,
+	button {
+		font-size: 0.8rem;
+	}
+
+	#role-selection button {
+		font-size: 0.8rem;
+	}
+}
